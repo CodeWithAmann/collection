@@ -1,0 +1,80 @@
+1.ans: 
+The Collection framework in Java is a unified architecture for representing and manipulating collections. It includes:
+
+Interfaces: Abstract data types representing collections (e.g., List, Set, Queue).
+Implementations: Concrete classes that implement these interfaces (e.g., ArrayList, HashSet).
+Algorithms: Methods that perform operations on collections (e.g., sorting, searching).
+
+2.Ans:-
+ArrayList:
+
+Underlying Data Structure: Dynamic array.
+Access Time: O(1) for get(index).
+Insertion/Deletion Time: O(n) in the worst case (because elements need to be shifted).
+Memory Overhead: Less than LinkedList (only stores elements).
+LinkedList:
+
+Underlying Data Structure: Doubly linked list.
+Access Time: O(n) for get(index).
+Insertion/Deletion Time: O(1) if the position is known (because no shifting is required).
+Memory Overhead: More than ArrayList (stores node pointers).
+
+3.Ans:-
+Iterator:
+
+Can traverse elements in a collection in one direction.
+Methods: hasNext(), next(), remove().
+Applicable to any collection.
+ListIterator:
+
+Extends Iterator, allowing bidirectional traversal.
+Methods: hasNext(), next(), remove(), hasPrevious(), previous(), add(), set().
+Applicable only to List types.
+
+4.Ans:-
+Iterator:
+
+Part of the Java Collections Framework.
+Methods: hasNext(), next(), remove().
+Allows removal of elements during iteration.
+Enumeration:
+
+Legacy interface, used before the Collections Framework.
+Methods: hasMoreElements(), nextElement().
+No support for element removal.
+
+5.Ans:-
+List:
+
+Ordered collection, elements can be accessed by index.
+Allows duplicate elements.
+Implementations: ArrayList, LinkedList.
+Set:
+
+Unordered collection, no duplicate elements.
+No index-based access.
+Implementations: HashSet, TreeSet, LinkedHashSet.
+
+6.Ans:-
+HashSet:
+
+Backed by a hash table.
+Provides constant-time performance for basic operations (add, remove, contains).
+Does not maintain any order.
+TreeSet:
+
+Backed by a Red-Black tree.
+Provides log-time performance for basic operations.
+Maintains elements in natural order (or custom order if a comparator is provided).
+
+7.Ans:-
+Array:
+
+Fixed size, defined at the time of creation.
+Can store primitives and objects.
+Does not provide collection methods like add(), remove().
+ArrayList:
+
+Dynamic size, can grow or shrink as needed.
+Can only store objects (use wrapper classes for primitives).
+Provides collection methods for easy manipulation of elements.
